@@ -8,15 +8,26 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: #121212;
+    
+    /* ИЗМЕНЕНИЯ ЗДЕСЬ: */
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('data:image/svg+xml;utf8,<svg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'><rect x=\'0\' y=\'0\' width=\'20\' height=\'20\' fill=\'#222222\'/><path d=\'M0 5L20 5L20 0L0 0Z M0 15L20 15L20 10L0 10Z\' fill=\'#333333\'/><path d=\'M5 0L5 20L0 20L0 0Z M15 0L15 20L10 20L10 0Z\' fill=\'#333333\'/><path d=\'M0 0L20 20\' stroke=\'#444444\' stroke-width=\'1\'/><path d=\'M20 0L0 20\' stroke=\'#444444\' stroke-width=\'1\'/></svg>');
-    background-size: auto;
-    background-position: auto;
+        /* Слой затемнения (0.6 - это 60% темноты), чтобы текст читался */
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        /* Ваша картинка */
+        url('https://img.freepik.com/premium-photo/bunch-wires-that-are-connected-box_1053-6532.jpg?semt=ais_hybrid&w=740');
+        
+    /* Растягиваем картинку на весь экран */
+    background-size: cover;
+    /* Центрируем картинку */
+    background-position: center;
+    /* Запрещаем повторение */
+    background-repeat: no-repeat;
 }
 
 .vcard {
     background: #1e1e1e;
+    /* Можно добавить немного прозрачности карточке, если хотите:
+       background: rgba(30, 30, 30, 0.95); */
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     color: #e0e0e0;
@@ -25,6 +36,8 @@ body, html {
     padding: 30px;
     box-sizing: border-box;
     text-align: center;
+    /* Добавим эффект стекла (блюр заднего фона под карточкой) */
+    backdrop-filter: blur(5px);
 }
 
 .card-content h1 {
