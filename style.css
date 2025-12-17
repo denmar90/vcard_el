@@ -12,7 +12,7 @@ body, html {
     /* ИЗМЕНЕНИЯ ЗДЕСЬ: */
     background-image: 
         /* Слой затемнения (0.6 - это 60% темноты), чтобы текст читался */
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         /* Ваша картинка */
         url('https://img.freepik.com/premium-photo/bunch-wires-that-are-connected-box_1053-6532.jpg?semt=ais_hybrid&w=740');
         
